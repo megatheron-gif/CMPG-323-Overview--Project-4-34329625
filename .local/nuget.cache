@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FSqPH9rnyWX0M1Dge4eZEPFNH5uJwmVWYDiCczwmtBC+avJOwOmVoq10BRVdi8MOLiOM0XX/hLZ5PZSXU6Ycjg==",
+  "dgSpecHash": "qdjooXhQQUiqIjx2nUNUP8bgK1RexHTmCVEL9Dae86rtwOHegDXSAyXZZeLchAd5+3KlbyANcYZARAuBUZtZFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mega\\OneDrive\\Documents\\3 de jaar\\323\\project 4\\CMPG-323-Overview--Project-4-34329625\\UI-path\\.local\\",
+  "projectFilePath": "C:\\Users\\Mega\\OneDrive\\Documents\\3 de jaar\\323\\project 3\\CMPG-323-Overview--Project-4-34329625\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Mega\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Mega\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
