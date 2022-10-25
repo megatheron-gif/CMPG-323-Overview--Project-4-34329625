@@ -98,7 +98,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Iterate trough data tables" sap:VirtualizedContainerService.HintSize="593.6,1353.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Iterate trough data tables" sap:VirtualizedContainerService.HintSize="752.8,1766.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="devices_dt_str" />
       <Variable x:TypeArguments="x:Int32" Name="i1" />
@@ -110,7 +110,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="531.2,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="690.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">devices_dt_local</CSharpReference>
@@ -122,7 +122,7 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <ui:OutputDataTable DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="531.2,90.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_2">
+    <ui:OutputDataTable DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="690.4,90.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_2">
       <ui:OutputDataTable.DataTable>
         <InArgument x:TypeArguments="sd:DataTable">
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">devices_dt_local</CSharpValue>
@@ -134,18 +134,18 @@
         </OutArgument>
       </ui:OutputDataTable.Text>
     </ui:OutputDataTable>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="531.2,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_3">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="690.4,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_3">
       <InArgument x:TypeArguments="x:String">
         <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"stratlol \n"+devices_dt_str+"lol"</CSharpValue>
       </InArgument>
     </WriteLine>
-    <ui:ForEachRow ColumnNames="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="531.2,852" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="690.4,1264.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="row loop" sap:VirtualizedContainerService.HintSize="497.6,726.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="row loop" sap:VirtualizedContainerService.HintSize="656.8,1139.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="field_vaue" />
               <Variable x:TypeArguments="s:String[]" Name="field_array" />
@@ -157,15 +157,28 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="435.2,398.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="594.4,811.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Field loop" sap:VirtualizedContainerService.HintSize="400,221.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Field loop" sap:VirtualizedContainerService.HintSize="559.2,634.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="337.6,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_6">
+                  <Switch x:TypeArguments="x:Int32" DisplayName="switch to input data into web page" sap:VirtualizedContainerService.HintSize="496.8,372.8" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                    <Switch.Expression>
+                      <InArgument x:TypeArguments="x:Int32">
+                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">field_index</CSharpValue>
+                      </InArgument>
+                    </Switch.Expression>
+                    <x:Null x:Key="0" />
+                    <x:Null x:Key="1" />
+                    <x:Null x:Key="2" />
+                    <x:Null x:Key="3" />
+                    <x:Null x:Key="4" />
+                    <x:Null x:Key="5" />
+                  </Switch>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="496.8,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_6">
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">"\n--"+row[field_index]+"--"</CSharpValue>
                     </InArgument>
@@ -181,7 +194,7 @@
                 </OutArgument>
               </ui:InterruptibleWhile.CurrentIndex>
             </ui:InterruptibleWhile>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="594.4,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_4">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,320.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
@@ -215,7 +228,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="594.4,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_5">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,221.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
