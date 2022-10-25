@@ -157,7 +157,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="337.6,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_5">
               <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">"\n--"+row+"--"</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"\n--"+row[0]+"--"</CSharpValue>
               </InArgument>
             </WriteLine>
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_4">
