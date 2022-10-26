@@ -3,7 +3,7 @@
     <x:Property Name="get_dive_dt" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>797.6,2734.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1134.4,3368.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -105,7 +105,7 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Main" sap:VirtualizedContainerService.HintSize="827.2,3113.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Main" sap:VirtualizedContainerService.HintSize="827.2,3304" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="devices_dt" />
       <Variable x:TypeArguments="x:String" Name="output_devices_dt" />
@@ -139,7 +139,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:UiElementExists DisplayName="Element Exists 'B'" sap:VirtualizedContainerService.HintSize="544,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+            <ui:UiElementExists DisplayName="Element Exists 'B'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
               <ui:UiElementExists.Exists>
                 <OutArgument x:TypeArguments="x:Boolean">
                   <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">logged_in</CSharpReference>
@@ -153,12 +153,18 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If sap:VirtualizedContainerService.HintSize="544,496.8" sap2010:WorkflowViewState.IdRef="If_2">
+            <If sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Condition>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">logged_in</CSharpValue>
                 </InArgument>
               </If.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="462.4,216" sap2010:WorkflowViewState.IdRef="Sequence_21">
                   <sap:WorkflowViewStateService.ViewState>
@@ -201,6 +207,27 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
+    <Sequence DisplayName="Delete all web page data" sap:VirtualizedContainerService.HintSize="764.8,246.4" sap2010:WorkflowViewState.IdRef="Sequence_40">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="del_tf" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Delete web page data.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="337.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Delete web page data.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="navigate_to">
+            <Literal x:TypeArguments="x:String">https://connectedoffice-devicemanagement.azurewebsites.net/Categories</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="tilte_name">
+            <Literal x:TypeArguments="x:String">Categories</Literal>
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
     <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Get datatables" sap:VirtualizedContainerService.HintSize="764.8,124" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="devices_str" />
@@ -278,14 +305,6 @@
         </InArgument>
       </WriteLine>
     </Sequence>
-    <Sequence DisplayName="Navigate to categories" sap:VirtualizedContainerService.HintSize="764.8,115.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </Sequence>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="764.8,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_9">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462.4,552" sap2010:WorkflowViewState.IdRef="Sequence_24">
@@ -351,7 +370,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence DisplayName="Iterate through datatables" sap:VirtualizedContainerService.HintSize="764.8,2466.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Iterate through datatables" sap:VirtualizedContainerService.HintSize="764.8,2525.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="variable1" />
         <Variable x:TypeArguments="x:String" Name="ctiwpr" />
@@ -369,39 +388,63 @@
           </OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <If sap:VirtualizedContainerService.HintSize="702.4,1998.4" sap2010:WorkflowViewState.IdRef="If_3">
+      <If sap:VirtualizedContainerService.HintSize="702.4,2057.6" sap2010:WorkflowViewState.IdRef="If_3">
         <If.Condition>
           <InArgument x:TypeArguments="x:Boolean">
             <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">ctiwpr=="ja"</CSharpValue>
           </InArgument>
         </If.Condition>
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="620.8,1717.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <Sequence sap:VirtualizedContainerService.HintSize="620.8,1776.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence sap:VirtualizedContainerService.HintSize="558.4,1594.4" sap2010:WorkflowViewState.IdRef="Sequence_33">
+            <Sequence sap:VirtualizedContainerService.HintSize="558.4,1653.6" sap2010:WorkflowViewState.IdRef="Sequence_33">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:BrowserScope Browser="{x:Null}" BrowserType="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" DisplayName="Attach Browser 'chrome.exe Home'" sap:VirtualizedContainerService.HintSize="496,1471.2" sap2010:WorkflowViewState.IdRef="BrowserScope_1" Selector="&lt;html app='chrome.exe' title='Home Page - Connected Office: Device Management' /&gt;">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Home'" sap:VirtualizedContainerService.HintSize="496,1530.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="2e1f3f8f74c99ca90a56d7255b6be95d" Selector="&lt;html app='chrome.exe' title='Home Page - Connected Office: Device Management' /&gt;">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="462.4,1352.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="462.4,1373.6" sap2010:WorkflowViewState.IdRef="Sequence_36">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="400,69.6" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://connectedoffice-devicemanagement.azurewebsites.net/Categories" />
+                      <Sequence DisplayName="navigate to  zone" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" />
+                      </Sequence>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Iterate through zones sheet.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Iterate through zones sheet.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="sd:DataTable" x:Key="input">
+                            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">Zones</CSharpValue>
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="argument1" />
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                      <Sequence DisplayName="Navigate to Categories" sap:VirtualizedContainerService.HintSize="400,192.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://connectedoffice-devicemanagement.azurewebsites.net/Categories" />
+                      </Sequence>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Iteration through categories sheet.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Iteration through categories sheet.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="sd:DataTable" x:Key="input">
@@ -410,61 +453,6 @@
                           <OutArgument x:TypeArguments="sd:DataTable" x:Key="Categories_dt">
                             <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">Categories</CSharpReference>
                           </OutArgument>
-                        </ui:InvokeWorkflowFile.Arguments>
-                      </ui:InvokeWorkflowFile>
-                      <Sequence DisplayName="navigate to  zone" sap:VirtualizedContainerService.HintSize="400,295.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" />
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_12">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Zones'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
-                                <ui:Click.CursorPosition>
-                                  <ui:CursorPosition Position="Center">
-                                    <ui:CursorPosition.OffsetX>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:CursorPosition.OffsetX>
-                                    <ui:CursorPosition.OffsetY>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:CursorPosition.OffsetY>
-                                  </ui:CursorPosition>
-                                </ui:Click.CursorPosition>
-                                <ui:Click.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8ae98001-569b-4771-91b4-7480f4f32ba0" InformativeScreenshot="ec167d599bd0574445f62f4c9e955b8b" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;&lt;webctrl aaname='Zones' tag='A' /&gt;">
-                                    <ui:Target.TimeoutMS>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:Target.TimeoutMS>
-                                    <ui:Target.WaitForReady>
-                                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                                    </ui:Target.WaitForReady>
-                                  </ui:Target>
-                                </ui:Click.Target>
-                              </ui:Click>
-                            </Sequence>
-                          </ui:CommentOut.Body>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </ui:CommentOut>
-                      </Sequence>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Iterate through zones sheet.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="400,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Iterate through zones sheet.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="sd:DataTable" x:Key="input">
-                            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">Zones</CSharpValue>
-                          </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
                       <Sequence DisplayName="navigate to devices" sap:VirtualizedContainerService.HintSize="400,295.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
