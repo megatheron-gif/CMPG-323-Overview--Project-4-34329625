@@ -3,7 +3,7 @@
     <x:Property Name="get_dive_dt" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1134.4,7040.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>852,7040.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -422,7 +422,7 @@
             </OutArgument>
           </ui:UiElementExists.Exists>
           <ui:UiElementExists.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="423db200-1adb-4335-b993-72c91e21043b" InformativeScreenshot="a7e7470a8429996249c5469f69bec61a" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="423db200-1adb-4335-b993-72c91e21043b" InformativeScreenshot="650610e5d7405ad5ede126a2b7b86d73" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
               <ui:Target.WaitForReady>
                 <InArgument x:TypeArguments="ui:WaitForReady" />
               </ui:Target.WaitForReady>
@@ -541,7 +541,28 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="579.2,69.6" sap2010:WorkflowViewState.IdRef="NavigateTo_5" Url="https://connectedoffice-devicemanagement.azurewebsites.net/Categories" />
+        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Categories'" sap:VirtualizedContainerService.HintSize="579.2,116.8" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition Position="Center">
+              <ui:CursorPosition.OffsetX>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetX>
+              <ui:CursorPosition.OffsetY>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetY>
+            </ui:CursorPosition>
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="96f54014-1d81-4cad-9622-40e46d8d5239" InformativeScreenshot="3b569eeb9d0e3c4b8f865f43facb58e9" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl aaname='Categories' tag='A' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
         <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="579.2,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
           <ui:UiElementExists.Exists>
             <OutArgument x:TypeArguments="x:Boolean">
@@ -549,7 +570,7 @@
             </OutArgument>
           </ui:UiElementExists.Exists>
           <ui:UiElementExists.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="423db200-1adb-4335-b993-72c91e21043b" InformativeScreenshot="951dbfce00e082a86a32a65faf9a4022" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="423db200-1adb-4335-b993-72c91e21043b" InformativeScreenshot="78876e6215c268f3679fb4fc70fbb792" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
               <ui:Target.WaitForReady>
                 <InArgument x:TypeArguments="ui:WaitForReady" />
               </ui:Target.WaitForReady>
@@ -662,7 +683,7 @@
         </ui:InterruptibleWhile>
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Get datatables" sap:VirtualizedContainerService.HintSize="764.8,124" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Get datatables" sap:VirtualizedContainerService.HintSize="800,124" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="devices_str" />
         <Variable x:TypeArguments="x:String" Name="zones_str" />
@@ -739,7 +760,7 @@
         </InArgument>
       </WriteLine>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="764.8,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="800,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_9">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462.4,520" sap2010:WorkflowViewState.IdRef="Sequence_24">
           <sap:WorkflowViewStateService.ViewState>
@@ -804,7 +825,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence DisplayName="Iterate through datatables" sap:VirtualizedContainerService.HintSize="764.8,2525.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Iterate through datatables" sap:VirtualizedContainerService.HintSize="800,2525.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="variable1" />
         <Variable x:TypeArguments="x:String" Name="ctiwpr" />
