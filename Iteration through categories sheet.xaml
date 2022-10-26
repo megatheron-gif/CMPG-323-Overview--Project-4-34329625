@@ -4,7 +4,7 @@
     <x:Property Name="Categories_dt" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1145.6,1724</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1134.4,1797.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="25">
@@ -92,7 +92,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Iteration_through_categories_sheet" sap:VirtualizedContainerService.HintSize="752.8,1541.6000000000001" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Iteration_through_categories_sheet" sap:VirtualizedContainerService.HintSize="752.8,1732.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="row_index" />
       <Variable x:TypeArguments="x:String" Name="inp_str" />
@@ -149,13 +149,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:ForEachRow ColumnNames="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="690.4,1076" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="690.4,1267.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="row loop" sap:VirtualizedContainerService.HintSize="656.8,950.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="row loop" sap:VirtualizedContainerService.HintSize="656.8,1141.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="field_vaue" />
               <Variable x:TypeArguments="s:String[]" Name="field_array" />
@@ -167,15 +167,15 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="594.4,622.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="594.4,813.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Field loop" sap:VirtualizedContainerService.HintSize="559.2,445.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Field loop" sap:VirtualizedContainerService.HintSize="559.2,636.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Switch x:TypeArguments="x:Int32" DisplayName="switch to input data into web page" sap:VirtualizedContainerService.HintSize="496.8,220" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                  <Switch x:TypeArguments="x:Int32" DisplayName="switch to input data into web page" sap:VirtualizedContainerService.HintSize="496.8,411.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                     <Switch.Expression>
                       <InArgument x:TypeArguments="x:Int32">
                         <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">field_index</CSharpValue>
@@ -193,7 +193,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b056885a-008e-46d2-b559-33bde15cfc1d" InformativeScreenshot="a771cb8ee1af135fc41b0b9f146ac214" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;&lt;webctrl aaname='              ' tag='IMG' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b056885a-008e-46d2-b559-33bde15cfc1d" InformativeScreenshot="9542b83b9ca22687123ba3314a7e026d" Selector="&lt;html app='chrome.exe' title='Devices - Connected Office: Device Management' /&gt;&lt;webctrl aaname='              ' tag='IMG' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -205,7 +205,7 @@
                     </ui:Click>
                     <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" x:Key="1" Activate="True" sap:VirtualizedContainerService.HintSize="333.6,144.8" sap2010:WorkflowViewState.IdRef="TypeInto_1">
                       <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1758fc2c-ffee-45bf-9c37-2abe18344dcb" InformativeScreenshot="7716ff80241ffca022a43cc8e899d6bd" Selector="&lt;html app='chrome.exe' title='Create Category - Connected Office: Device Management' /&gt;&lt;webctrl id='CategoryName' tag='INPUT' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1758fc2c-ffee-45bf-9c37-2abe18344dcb" InformativeScreenshot="ab05e3449093b29379f26137fd82ce38" Selector="&lt;html app='chrome.exe' title='Create Device - Connected Office: Device Management' /&gt;&lt;webctrl id='DeviceName' tag='INPUT' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -220,9 +220,37 @@
                         </InArgument>
                       </ui:TypeInto.Text>
                     </ui:TypeInto>
-                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" x:Key="2" Activate="True" sap:VirtualizedContainerService.HintSize="333.6,144.8" sap2010:WorkflowViewState.IdRef="TypeInto_2">
-                      <ui:TypeInto.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e837faa-09fb-47ea-9b81-7bb4e3819853" InformativeScreenshot="1a9db78486a0997d21ac787d9069b012" Selector="&lt;html app='chrome.exe' title='Create Category - Connected Office: Device Management' /&gt;&lt;webctrl id='CategoryDescription' tag='INPUT' /&gt;">
+                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" x:Key="2" sap:VirtualizedContainerService.HintSize="358.4,144.8" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Camera">
+                      <ui:SelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="32">
+                          <x:String>Camera</x:String>
+                          <x:String>Motion Sensor</x:String>
+                          <x:String>Temperature Sensor</x:String>
+                          <x:String>Temperature Sensor</x:String>
+                          <x:String>Camera</x:String>
+                          <x:String>Speed Sensor</x:String>
+                          <x:String>Temperature Sensor</x:String>
+                          <x:String>Speed Sensor</x:String>
+                          <x:String>Temperature Sensor</x:String>
+                          <x:String>Speed Sensor</x:String>
+                          <x:String>Camera</x:String>
+                          <x:String>Access Control</x:String>
+                          <x:String>Access Control</x:String>
+                          <x:String>Access Control</x:String>
+                          <x:String>Motion Sensor</x:String>
+                          <x:String>Access Control</x:String>
+                          <x:String>Camera</x:String>
+                          <x:String>Access Control</x:String>
+                          <x:String>Motion Sensor</x:String>
+                          <x:String>Camera</x:String>
+                          <x:String>Temperature Sensor</x:String>
+                          <x:String>Motion Sensor</x:String>
+                          <x:String>Speed Sensor</x:String>
+                          <x:String>Motion Sensor</x:String>
+                        </scg:List>
+                      </ui:SelectItem.Items>
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0b62b37d-0b5a-4125-8553-63ae4a95c815" InformativeScreenshot="3e23c981283b7a9312c621c3b92dc758" Selector="&lt;html app='chrome.exe' title='Create Device - Connected Office: Device Management' /&gt;&lt;webctrl id='CategoryId' tag='SELECT' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -230,13 +258,8 @@
                             <InArgument x:TypeArguments="ui:WaitForReady" />
                           </ui:Target.WaitForReady>
                         </ui:Target>
-                      </ui:TypeInto.Target>
-                      <ui:TypeInto.Text>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">row[field_index].ToString()</CSharpValue>
-                        </InArgument>
-                      </ui:TypeInto.Text>
-                    </ui:TypeInto>
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
                     <Sequence x:Key="3" sap:VirtualizedContainerService.HintSize="400,396.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -291,7 +314,7 @@
                   </Switch>
                   <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496.8,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                     <ui:CommentOut.Body>
-                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,222.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,221.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -358,7 +381,7 @@
             </ui:CommentOut>
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="594.4,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,221.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,222.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
