@@ -447,7 +447,7 @@
                   </OutArgument>
                 </ui:UiElementExists.Exists>
                 <ui:UiElementExists.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="a7e7470a8429996249c5469f69bec61a" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="650610e5d7405ad5ede126a2b7b86d73" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -482,7 +482,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3bc353f-9154-479a-810d-d2b2e765d0a4" InformativeScreenshot="951dbfce00e082a86a32a65faf9a4022" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3bc353f-9154-479a-810d-d2b2e765d0a4" InformativeScreenshot="650610e5d7405ad5ede126a2b7b86d73" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -504,7 +504,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0efd96f5-5e15-4816-9860-10e7a6f29601" InformativeScreenshot="0f04f754e500694d20b3ee5627937ebc" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0efd96f5-5e15-4816-9860-10e7a6f29601" InformativeScreenshot="0df1999bf344ee97d5cdcf52201a3b15" Selector="&lt;html app='chrome.exe' title='Delete Zone - Connected Office: Device Management' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -595,7 +595,7 @@
                   </OutArgument>
                 </ui:UiElementExists.Exists>
                 <ui:UiElementExists.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="951dbfce00e082a86a32a65faf9a4022" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="78876e6215c268f3679fb4fc70fbb792" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -630,7 +630,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3bc353f-9154-479a-810d-d2b2e765d0a4" InformativeScreenshot="951dbfce00e082a86a32a65faf9a4022" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3bc353f-9154-479a-810d-d2b2e765d0a4" InformativeScreenshot="78876e6215c268f3679fb4fc70fbb792" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -652,7 +652,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0efd96f5-5e15-4816-9860-10e7a6f29601" InformativeScreenshot="0df1999bf344ee97d5cdcf52201a3b15" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0efd96f5-5e15-4816-9860-10e7a6f29601" InformativeScreenshot="0df1999bf344ee97d5cdcf52201a3b15" Selector="&lt;html app='chrome.exe' title='Delete Category - Connected Office: Device Management' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
