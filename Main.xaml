@@ -3,7 +3,7 @@
     <x:Property Name="get_dive_dt" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>949.6,4845.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>797.6,4537.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -105,7 +105,7 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Main" sap:VirtualizedContainerService.HintSize="960,4780.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Main" sap:VirtualizedContainerService.HintSize="766.4,4017.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="devices_dt" />
       <Variable x:TypeArguments="x:String" Name="output_devices_dt" />
@@ -116,6 +116,7 @@
       <Variable x:TypeArguments="sd:DataTable" Name="Categories" />
       <Variable x:TypeArguments="sd:DataTable" Name="Test_Results" />
       <Variable x:TypeArguments="sd:DataTable" Name="Zones" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -123,7 +124,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="897.6,204.8" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://connectedoffice-devicemanagement.azurewebsites.net">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="704,204.8" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://connectedoffice-devicemanagement.azurewebsites.net">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -153,7 +154,7 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If sap:VirtualizedContainerService.HintSize="544,496.79999999999995" sap2010:WorkflowViewState.IdRef="If_2">
+            <If sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Condition>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">logged_in</CSharpValue>
@@ -207,7 +208,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Get datatables" sap:VirtualizedContainerService.HintSize="897.6,124" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Get datatables" sap:VirtualizedContainerService.HintSize="704,124" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="devices_str" />
         <Variable x:TypeArguments="x:String" Name="zones_str" />
@@ -284,7 +285,7 @@
         </InArgument>
       </WriteLine>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="897.6,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_9">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="462.4,520" sap2010:WorkflowViewState.IdRef="Sequence_24">
           <sap:WorkflowViewStateService.ViewState>
@@ -349,7 +350,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence DisplayName="Iterate through datatables" sap:VirtualizedContainerService.HintSize="897.6,92.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Iterate through datatables" sap:VirtualizedContainerService.HintSize="704,92.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="variable1" />
         <Variable x:TypeArguments="x:String" Name="ctiwpr" />
@@ -510,9 +511,13 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Delete all web page data" sap:VirtualizedContainerService.HintSize="897.6,3624" sap2010:WorkflowViewState.IdRef="Sequence_40">
+    <Sequence DisplayName="Delete all web page data" sap:VirtualizedContainerService.HintSize="704,3250.4" sap2010:WorkflowViewState.IdRef="Sequence_40">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:Boolean" Name="del_tf" />
+        <Variable x:TypeArguments="x:Boolean" Name="del_tf">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Boolean" />
+          </Variable.Default>
+        </Variable>
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -520,7 +525,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="delete devices data" sap:VirtualizedContainerService.HintSize="835.2,1636.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
+      <Sequence DisplayName="delete devices data" sap:VirtualizedContainerService.HintSize="641.6,1896" sap2010:WorkflowViewState.IdRef="Sequence_56">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Int32" Name="i" />
         </Sequence.Variables>
@@ -537,23 +542,57 @@
             </OutArgument>
           </ui:UiElementExists.Exists>
           <ui:UiElementExists.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1bedaa06-1bfc-40a0-9922-e7d2ba576aec" InformativeScreenshot="77c0d400f6ee4ef094600f59290c080d" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='9' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1bedaa06-1bfc-40a0-9922-e7d2ba576aec" InformativeScreenshot="a9247c9cb7798e4db8fcb45ed904069b" Selector="&lt;html app='chrome.exe' title='Devices - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='9' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
               <ui:Target.WaitForReady>
                 <InArgument x:TypeArguments="ui:WaitForReady" />
               </ui:Target.WaitForReady>
             </ui:Target>
           </ui:UiElementExists.Target>
         </ui:UiElementExists>
-        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="579.2,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_6">
-          <ui:MessageBox.Text>
-            <InArgument x:TypeArguments="x:Object">
-              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">"before while"</CSharpValue>
-            </InArgument>
-          </ui:MessageBox.Text>
-        </ui:MessageBox>
-        <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="579.2,1221.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_4">
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="579.2,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,185.6" sap2010:WorkflowViewState.IdRef="Sequence_61">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_17">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,218.4" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_6">
+                      <ui:MessageBox.Text>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">"before while"</CSharpValue>
+                        </InArgument>
+                      </ui:MessageBox.Text>
+                    </ui:MessageBox>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+            </Sequence>
+          </ui:CommentOut.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:CommentOut>
+        <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="579.2,1513.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_4">
           <ui:InterruptibleWhile.Body>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="544,1044.8" sap2010:WorkflowViewState.IdRef="Sequence_55">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="544,1336.8" sap2010:WorkflowViewState.IdRef="Sequence_55">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="del_tf" />
               </Sequence.Variables>
@@ -563,6 +602,13 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="481.6,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_7">
+                <ui:MessageBox.Text>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">"deltf "+del_tf</CSharpValue>
+                  </InArgument>
+                </ui:MessageBox.Text>
+              </ui:MessageBox>
               <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="481.6,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_9">
                 <ui:UiElementExists.Exists>
                   <OutArgument x:TypeArguments="x:Boolean">
@@ -577,14 +623,14 @@
                   </ui:Target>
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
-              <If sap:VirtualizedContainerService.HintSize="481.6,764.8" sap2010:WorkflowViewState.IdRef="If_7">
+              <If sap:VirtualizedContainerService.HintSize="481.6,921.6" sap2010:WorkflowViewState.IdRef="If_7">
                 <If.Condition>
                   <InArgument x:TypeArguments="x:Boolean">
                     <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">del_tf</CSharpValue>
                   </InArgument>
                 </If.Condition>
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="400,499.2" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                  <Sequence sap:VirtualizedContainerService.HintSize="400,656" sap2010:WorkflowViewState.IdRef="Sequence_53">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -592,10 +638,10 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_16">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,92.8" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,218.4" sap2010:WorkflowViewState.IdRef="Sequence_59">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -615,6 +661,20 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
+                    <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_11">
+                      <ui:UiElementExists.Exists>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">del_tf</CSharpReference>
+                        </OutArgument>
+                      </ui:UiElementExists.Exists>
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="77c0d400f6ee4ef094600f59290c080d" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='9' tableRow='2' tag='IMG' /&gt;" TimeoutMS="1000">
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
                     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
@@ -669,7 +729,7 @@
             </Sequence>
           </ui:InterruptibleWhile.Body>
           <ui:InterruptibleWhile.Condition>
-            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">del_tf</CSharpValue>
+            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">del_tf</CSharpValue>
           </ui:InterruptibleWhile.Condition>
           <ui:InterruptibleWhile.CurrentIndex>
             <OutArgument x:TypeArguments="x:Int32">
@@ -684,21 +744,27 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:InterruptibleWhile>
       </Sequence>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="835.2,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_4">
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="641.6,62.4" sap2010:WorkflowViewState.IdRef="MessageBox_4">
         <ui:MessageBox.Text>
           <InArgument x:TypeArguments="x:Object">
             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">"completed devices data delete"</CSharpValue>
           </InArgument>
         </ui:MessageBox.Text>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </ui:MessageBox>
-      <Sequence DisplayName="delete zone data" sap:VirtualizedContainerService.HintSize="835.2,1556" sap2010:WorkflowViewState.IdRef="Sequence_52">
+      <Sequence DisplayName="delete zone data" sap:VirtualizedContainerService.HintSize="641.6,956" sap2010:WorkflowViewState.IdRef="Sequence_52">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Zones'" sap:VirtualizedContainerService.HintSize="579.2,116.8" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /Zones'" sap:VirtualizedContainerService.HintSize="435.2,116.8" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
           <ui:Click.CursorPosition>
             <ui:CursorPosition Position="Center">
               <ui:CursorPosition.OffsetX>
@@ -710,17 +776,14 @@
             </ui:CursorPosition>
           </ui:Click.CursorPosition>
           <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c1462da-a989-4a2f-8c00-10bf8db2aa59" InformativeScreenshot="583abe7ef6cf23390e1ae13ad80989ad" Selector="&lt;html app='chrome.exe' title='Devices - Connected Office: Device Management' /&gt;&lt;webctrl aaname='Zones' tag='A' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0c1462da-a989-4a2f-8c00-10bf8db2aa59" InformativeScreenshot="583abe7ef6cf23390e1ae13ad80989ad" Selector="&lt;html app='chrome.exe' title='Devices - Connected Office: Device Management' /&gt;&lt;webctrl aaname='Zones' tag='A' /&gt;" TimeoutMS="2000">
               <ui:Target.WaitForReady>
                 <InArgument x:TypeArguments="ui:WaitForReady" />
               </ui:Target.WaitForReady>
             </ui:Target>
           </ui:Click.Target>
         </ui:Click>
-        <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="579.2,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
+        <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="435.2,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
           <ui:UiElementExists.Exists>
             <OutArgument x:TypeArguments="x:Boolean">
               <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">del_tf</CSharpReference>
@@ -734,9 +797,9 @@
             </ui:Target>
           </ui:UiElementExists.Target>
         </ui:UiElementExists>
-        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="579.2,1119.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="435.2,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
           <ui:InterruptibleWhile.Body>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="544,942.4" sap2010:WorkflowViewState.IdRef="Sequence_51">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_51">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="del_tf" />
               </Sequence.Variables>
@@ -745,37 +808,40 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="481.6,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
+              <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
                 <ui:UiElementExists.Exists>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">del_tf</CSharpReference>
                   </OutArgument>
                 </ui:UiElementExists.Exists>
                 <ui:UiElementExists.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="650610e5d7405ad5ede126a2b7b86d73" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="650610e5d7405ad5ede126a2b7b86d73" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
                     <ui:Target.WaitForReady>
                       <InArgument x:TypeArguments="ui:WaitForReady" />
                     </ui:Target.WaitForReady>
                   </ui:Target>
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
-              <If sap:VirtualizedContainerService.HintSize="481.6,662.4" sap2010:WorkflowViewState.IdRef="If_6">
+              <If sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="If_6">
                 <If.Condition>
                   <InArgument x:TypeArguments="x:Boolean">
                     <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">del_tf</CSharpValue>
                   </InArgument>
                 </If.Condition>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="400,396.8" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                  <Sequence sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_49">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="337.6,62.4" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -787,15 +853,18 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3bc353f-9154-479a-810d-d2b2e765d0a4" InformativeScreenshot="650610e5d7405ad5ede126a2b7b86d73" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f3bc353f-9154-479a-810d-d2b2e765d0a4" InformativeScreenshot="650610e5d7405ad5ede126a2b7b86d73" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
                           <ui:Target.WaitForReady>
                             <InArgument x:TypeArguments="ui:WaitForReady" />
                           </ui:Target.WaitForReady>
                         </ui:Target>
                       </ui:Click.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </ui:Click>
                     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
@@ -837,9 +906,15 @@
           <ui:InterruptibleWhile.Condition>
             <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">del_tf</CSharpValue>
           </ui:InterruptibleWhile.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
         </ui:InterruptibleWhile>
       </Sequence>
-      <Sequence DisplayName="delete category data" sap:VirtualizedContainerService.HintSize="835.2,92.8" sap2010:WorkflowViewState.IdRef="Sequence_47">
+      <Sequence DisplayName="delete category data" sap:VirtualizedContainerService.HintSize="641.6,92.8" sap2010:WorkflowViewState.IdRef="Sequence_47">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -900,10 +975,7 @@
                   </OutArgument>
                 </ui:UiElementExists.Exists>
                 <ui:UiElementExists.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="78876e6215c268f3679fb4fc70fbb792" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad4daf51-a7b1-4b15-9db2-6988629fa2bb" InformativeScreenshot="78876e6215c268f3679fb4fc70fbb792" Selector="&lt;html app='chrome.exe' title='Categories - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" TimeoutMS="2000">
                     <ui:Target.WaitForReady>
                       <InArgument x:TypeArguments="ui:WaitForReady" />
                     </ui:Target.WaitForReady>
