@@ -3,7 +3,7 @@
     <x:Property Name="get_dive_dt" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1134.4,2800.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1134.4,2925.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -106,7 +106,7 @@
       <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Main" sap:VirtualizedContainerService.HintSize="622.4,2736" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="&#xA;" DisplayName="Main" sap:VirtualizedContainerService.HintSize="622.4,2860.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="devices_dt" />
       <Variable x:TypeArguments="x:String" Name="output_devices_dt" />
@@ -513,7 +513,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Update web dts" sap:VirtualizedContainerService.HintSize="560,1978.4" sap2010:WorkflowViewState.IdRef="Sequence_63">
+    <Sequence DisplayName="Update web dts" sap:VirtualizedContainerService.HintSize="560,2103.2" sap2010:WorkflowViewState.IdRef="Sequence_63">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -547,7 +547,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:Click>
-      <Sequence sap:VirtualizedContainerService.HintSize="497.6,572">
+      <Sequence sap:VirtualizedContainerService.HintSize="497.6,696.8">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Boolean" Name="w1" />
         </Sequence.Variables>
@@ -573,14 +573,31 @@
             </ui:Target>
           </ui:UiElementExists.Target>
         </ui:UiElementExists>
-        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="435.2,292">
+        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="435.2,416.8">
           <ui:InterruptibleWhile.Body>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,115.2">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,240">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
+              <ui:UiElementExists DisplayName="Element Exists 'IMG'" sap:VirtualizedContainerService.HintSize="337.6,116.8">
+                <ui:UiElementExists.Exists>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <CSharpReference x:TypeArguments="x:Boolean">w1</CSharpReference>
+                  </OutArgument>
+                </ui:UiElementExists.Exists>
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54e8e19a-7a47-4944-aa6d-12fd94ca4065" InformativeScreenshot="0288573a94f644891983ab5395959d6a" Selector="&lt;html app='chrome.exe' title='Zones - Connected Office: Device Management' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
             </Sequence>
           </ui:InterruptibleWhile.Body>
           <ui:InterruptibleWhile.Condition>
